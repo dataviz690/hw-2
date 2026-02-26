@@ -35,7 +35,7 @@ plot1 = base +
     caption = "Source: mtcars data",
     x ="Gear") +
   theme_classic() +
-  theme(plot.title = element_text(size = 30, colour = "lightgrey", face = "bold"),
+  theme(plot.title = element_text(size = 25, colour = "lightgrey", face = "bold"),
     axis.title.x = element_blank(),
           axis.line.x = element_blank(),
           axis.text.x = element_blank(),
@@ -61,7 +61,7 @@ plot2 = base +
     caption = "Source: mtcars data",
     x='CARB') +
   theme_classic() +
-  theme(plot.title = element_text(size = 20, colour = "black", face = "bold"),
+  theme(plot.title = element_text(size = 25, colour = "black", face = "bold"),
         axis.title.y = element_blank(),
         axis.line.y = element_blank(),
         axis.text.y = element_blank(),
