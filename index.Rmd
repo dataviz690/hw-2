@@ -1,0 +1,42 @@
+---
+title: "Lee Gianetti's Homework 2"
+bibliography: testVisual.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2026.
+
+## Column {.tabset .tabset-fade}
+
+### THREE-GEARCARS ARE DOMINANT
+
+```{r}
+## for plot1.rds
+link1="https://github.com/dataviz690/hw-test/raw/main/del1Draft.rds"
+readRDS(url(link1))
+```
+
+### FEW CARS have SIX or more CARBURATORS
+
+```{r}
+## for plot2.rds
+link2="https://github.com/dataviz690/hw-test/raw/main/del2Draft.rds"
+readRDS(url(link2))
+```
+
+### Only 5-gear cars utilize the 6 and 8 carburetor setups.
+
+```{r}
+## for plot3.rds
+link3="https://github.com/dataviz690/hw-test/raw/main/del3Draft.rds"
+readRDS(url(link3))
+```
+
+### References
