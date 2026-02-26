@@ -2,6 +2,9 @@
 title: "Lee Gianetti's Homework 2"
 output: 
   flexdashboard::flex_dashboard:
+    theme: 
+      version: 4
+      bootswatch: simplex
     orientation: rows
 ---
 
