@@ -40,7 +40,7 @@ plot1 = base +
           axis.line.x = element_blank(),
           axis.text.x = element_blank(),
           axis.ticks.x = element_blank(),
-          axis.title.y = element_text(face = "bold"))
+          axis.title.y = element_text(size = 18, face = "bold"))
 plot1
 
 
@@ -66,7 +66,7 @@ plot2 = base +
         axis.line.y = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
-        axis.title.x = element_text(face = "bold"))
+        axis.title.x = element_text(size = 18, face = "bold"))
 
 plot2
 
