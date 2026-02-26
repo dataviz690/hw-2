@@ -77,12 +77,12 @@ saveRDS(plot2, file = "plot2.rds")
 
 # plot 3 ----------------------------------------------------------
 
-N <- nrow(mydata)
+
 
 plot3 = base + 
   aes(x = factor(cyl)) + 
   geom_bar(fill = "yellow") +
-  geom_text(aes(label = scales::percent(..count.. / N)),
+  geom_text(aes(label = scales::percent(..count.. / 32)),
             stat = "count", size = 5, fontface = "bold", vjust = 1.6) +
   facet_grid(gear~carb,labeller = label_both) +
   labs(
