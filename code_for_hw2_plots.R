@@ -28,7 +28,7 @@ base = ggplot(data = mydata)
 plot1 = base + 
   aes(x = gear) + 
   geom_bar(fill = "lightgrey") + 
-  geom_text(aes(label = after_stat(count)), stat = "count", colour = "blue", size = 10, hjust = 1) +
+  geom_text(aes(label = ..count..), stat = "count", colour = "blue", size = 10, hjust = 1) +
   coord_flip() +
   labs(
     title = "Count of Cars per GEAR",
@@ -55,7 +55,7 @@ saveRDS(plot1, file = "plot1.rds")
 plot2 = base + 
   aes(x = factor(carb)) + 
   geom_bar(fill = "yellow") +
-  geom_text(aes(label= after_stat(count)), stat="count", colour = "darkgreen", vjust=-0.1) +
+  geom_text(aes(label= ..count..), stat="count", colour = "darkgreen", vjust=-0.1) +
   labs(
     title = "Count of Cars per CARB",
     caption = "Source: mtcars data",
@@ -80,7 +80,7 @@ saveRDS(plot2, file = "plot2.rds")
 plot3 = base + 
   aes(x = factor(cyl)) + 
   geom_bar(fill = "yellow") +
-  geom_text(aes(label = scales::percent(after_stat(count / sum(count)))),
+  geom_text(aes(label = scales::percent(..count.. / tapply(..count.., PANEL, sum)[PANEL])),
             stat = "count", size = 5, fontface = "bold", vjust = 1.6) +
   facet_grid(gear~carb,labeller = label_both) +
   labs(
