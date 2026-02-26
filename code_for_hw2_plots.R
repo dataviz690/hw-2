@@ -28,12 +28,12 @@ base = ggplot(data = mydata)
 plot1 = base + 
   aes(x = gear) + 
   geom_bar(fill = "lightgrey") + 
-  geom_text(stat ='count', aes(label = after_stat(count)), colour = "blue", size = 10, hjust = 1) +
+  geom_text(stat = "count", aes(label = after_stat(count)), colour = "blue", size = 10, hjust = 1) +
   coord_flip() +
   labs(
-    title = 'Count of Cars per GEAR',
-    caption = 'Source: mtcars data',
-    x ='Gear') +
+    title = "Count of Cars per GEAR",
+    caption = "Source: mtcars data",
+    x ="Gear") +
   theme_classic() +
   theme(plot.title = element_text(colour = "lightgrey", face = "bold"),
     axis.title.x = element_blank(),
@@ -55,10 +55,10 @@ saveRDS(plot1, file = "plot1.rds")
 plot2 = base + 
   aes(x = factor(carb)) + 
   geom_bar(fill = "yellow") +
-  geom_text(stat='count', aes(label= after_stat(count)), colour = "darkgreen", vjust=-0.1) +
+  geom_text(stat="count", aes(label= after_stat(count)), colour = "darkgreen", vjust=-0.1) +
   labs(
-    title = 'Count of Cars per CARB',
-    caption = 'Source: mtcars data',
+    title = "Count of Cars per CARB",
+    caption = "Source: mtcars data",
     x='CARB') +
   theme_classic() +
   theme(plot.title = element_text(colour = "black", face = "bold"),
@@ -78,9 +78,15 @@ saveRDS(plot2, file = "plot2.rds")
 # plot 3 ----------------------------------------------------------
 
 plot3 = base + 
-  aes(x = cyl) + 
-  geom_bar(fill = "yellow") + 
-  facet_grid(gear~carb,labeller = label_both)
+  aes(x = factor(cyl)) + 
+  geom_bar(fill = "yellow") + #add geom text with % and black small text on the bar not above
+  facet_grid(gear~carb,labeller = label_both) +
+  labs(
+    title = "Distribution of Cylinder Counts by Carburetors and Gears",
+    caption = "Source: mtcars data",
+    x = "cylinders",
+    y = "count") #add the theme to remove grey background but keep grid
+    
 plot3
 
 # save plot3 ----------------------------------------------------------
