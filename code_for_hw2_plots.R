@@ -79,13 +79,17 @@ saveRDS(plot2, file = "plot2.rds")
 
 plot3 = base + 
   aes(x = factor(cyl)) + 
-  geom_bar(fill = "yellow") + #add geom text with % and black small text on the bar not above
+  geom_bar(fill = "yellow") +
+  geom_text(aes(label = scales::percent(after_stat(count / sum(count)))),
+            stat = "count", size = 5, fontface = "bold", vjust = 1.6) +
   facet_grid(gear~carb,labeller = label_both) +
   labs(
     title = "Distribution of Cylinder Counts by Carburetors and Gears",
     caption = "Source: mtcars data",
     x = "cylinders",
-    y = "count") #add the theme to remove grey background but keep grid
+    y = "count") +
+  theme_light()
+
     
 plot3
 
