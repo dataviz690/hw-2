@@ -22,10 +22,9 @@ Prepare a dashboard using the **mtcars** data. You need to write the code to act
 
 **NOTE**: You may vary titles and colors.
 
-Row
---------------------------------
+## Row
 
-### THREE-GEARCARS ARE DOMINANT
+### **THREE-GEARCARS ARE DOMINANT**
 
 ```{r}
 ## for plot1.rds
@@ -33,7 +32,7 @@ link1="https://github.com/dataviz690/hw-2/raw/main/plot1.rds"
 readRDS(url(link1))
 ```
 
-### FEW CARS have SIX or more CARBURATORS
+### **FEW CARS have SIX or more CARBURATORS**
 
 ```{r}
 ## for plot2.rds
@@ -41,15 +40,12 @@ link2="https://github.com/dataviz690/hw-2/raw/main/plot2.rds"
 readRDS(url(link2))
 ```
 
-Row
-----------------------------------------
+## Row
 
-### Only 5-gear cars utilize the 6 and 8 carburetor setups.
+### **Only 5-gear cars utilize the 6 and 8 carburetor setups.**
 
 ```{r}
 ## for plot3.rds
 link3="https://github.com/dataviz690/hw-2/raw/main/plot3.rds"
 readRDS(url(link3))
 ```
-
-
