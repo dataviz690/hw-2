@@ -35,7 +35,7 @@ plot1 = base +
     caption = "Source: mtcars data",
     x ="Gear") +
   theme_classic() +
-  theme(plot.title = element_text(colour = "lightgrey", face = "bold"),
+  theme(plot.title = element_text(size = 30, colour = "lightgrey", face = "bold"),
     axis.title.x = element_blank(),
           axis.line.x = element_blank(),
           axis.text.x = element_blank(),
@@ -61,7 +61,7 @@ plot2 = base +
     caption = "Source: mtcars data",
     x='CARB') +
   theme_classic() +
-  theme(plot.title = element_text(colour = "black", face = "bold"),
+  theme(plot.title = element_text(size = 20, colour = "black", face = "bold"),
         axis.title.y = element_blank(),
         axis.line.y = element_blank(),
         axis.text.y = element_blank(),
@@ -83,7 +83,7 @@ plot3 = base +
   aes(x = factor(cyl)) + 
   geom_bar(fill = "yellow") +
   geom_text(aes(label = scales::percent(..count.. / 32)),
-            stat = "count", size = 5, fontface = "bold", vjust = 1.6) +
+            stat = "count", size = 3, fontface = "bold", vjust = 1.6) +
   facet_grid(gear~carb,labeller = label_both) +
   labs(
     title = "Distribution of Cylinder Counts by Carburetors and Gears",
