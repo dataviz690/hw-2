@@ -26,7 +26,7 @@ Row
 
 ```{r}
 ## for plot1.rds
-link1="https://github.com/dataviz690/hw-2/raw/6d1586844335caf1d8f5e69845f7837662b4cbae/plot1.rds"
+link1="https://github.com/dataviz690/hw-2/raw/main/plot1.rds"
 readRDS(url(link1))
 ```
 
@@ -34,7 +34,7 @@ readRDS(url(link1))
 
 ```{r}
 ## for plot2.rds
-link2="https://github.com/dataviz690/hw-2/raw/6d1586844335caf1d8f5e69845f7837662b4cbae/plot2.rds"
+link2="https://github.com/dataviz690/hw-2/raw/main/plot2.rds"
 readRDS(url(link2))
 ```
 
@@ -45,7 +45,7 @@ Row
 
 ```{r}
 ## for plot3.rds
-link3="https://github.com/dataviz690/hw-2/raw/6d1586844335caf1d8f5e69845f7837662b4cbae/plot3.rds"
+link3="https://github.com/dataviz690/hw-2/blob/main/plot3.rds"
 readRDS(url(link3))
 ```
 
