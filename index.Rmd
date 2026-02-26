@@ -1,8 +1,8 @@
 ---
 title: "Lee Gianetti's Homework 2"
-bibliography: testVisual.bib
 output: 
-  flexdashboard::flex_dashboard
+  flexdashboard::flex_dashboard:
+    orientation: rows
 ---
 
 ```{r setup, include=FALSE}
@@ -11,9 +11,16 @@ library(flexdashboard) # always
 
 ## Sidebar {.sidebar}
 
-Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2026.
+Prepare a dashboard using the **mtcars** data. You need to write the code to actually replicate the same plots you are seeing.
 
-## Column {.tabset .tabset-fade}
+1.  Send the link to the code in a GitHub repository
+2.  Dashboard should be published from a GitHub repo
+3.  The README should include the dashboard link.
+
+**NOTE**: You may vary titles and colors.
+
+Row
+--------------------------------
 
 ### THREE-GEARCARS ARE DOMINANT
 
@@ -31,6 +38,9 @@ link2="https://github.com/dataviz690/hw-test/raw/main/del2Draft.rds"
 readRDS(url(link2))
 ```
 
+Row
+----------------------------------------
+
 ### Only 5-gear cars utilize the 6 and 8 carburetor setups.
 
 ```{r}
@@ -39,4 +49,4 @@ link3="https://github.com/dataviz690/hw-test/raw/main/del3Draft.rds"
 readRDS(url(link3))
 ```
 
-### References
+
