@@ -45,7 +45,7 @@ Row
 
 ```{r}
 ## for plot3.rds
-link3="https://github.com/dataviz690/hw-2/blob/main/plot3.rds"
+link3="https://github.com/dataviz690/hw-2/raw/main/plot3.rds"
 readRDS(url(link3))
 ```
 
